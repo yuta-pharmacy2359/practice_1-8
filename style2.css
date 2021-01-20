@@ -17,6 +17,11 @@ main {
   background-color: #dfdfdf;
 }
 
+.list-background:nth-child(even) {
+  color: #ffffff;
+  background-color: #000000;
+}
+
 .boxes {
   margin-top: 50px;
   display: flex;
@@ -27,6 +32,13 @@ main {
   height: 200px;
   width: 30%;
   margin: 0 5% 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.box p {
+  font-size: 80px;
+  line-height: 200px;
 }
 
 .box:nth-of-type(3n) {
@@ -37,6 +49,14 @@ main {
   background-color: #ffd700;
 }
 
+.box-color:nth-of-type(even) {
+  background-color: #98fb98;
+}
+
 .box-color:nth-of-type(4n-3) {
   background-color: #ff8c00;
+}
+
+.box-color:nth-child(n + 10):nth-child(even) {
+  background-color: #00ffff;
 }
